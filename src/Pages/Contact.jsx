@@ -21,7 +21,7 @@ function Contact() {
         Email us at:
       </Text>
       <HStack p={5}>
-        <Link href="mailto:typethingc@gmail.com">
+        <Link href="mailto:typethingc@gmail.com" fontSize="1.25rem">
           typethingc@gmail.com
         </Link>
         <Button
@@ -43,19 +43,29 @@ function Contact() {
         align="stretch"
         mt={10}
       >
-        <FormLabel>
+        <FormLabel name="email">
           Email
-          <Input type="email" />
+          <Input type="email" name="email" isRequired />
         </FormLabel>
-        <FormLabel>
+        <FormLabel name="subject" isRequired>
           Subject
-          <Input type="text" />
+          <Input type="text" name="subject" />
         </FormLabel>
-        <FormLabel>
+        <FormLabel name="message" isRequired>
           Message
-          <Textarea />
+          <Textarea name="message" />
         </FormLabel>
-        <Button width="10ch" alignSelf="center" type="submit" variant="solid" colorScheme="purple">Submit</Button>
+        <Button
+          m={5}
+          isExternal
+          width="10ch"
+          alignSelf="center"
+          type="submit"
+          variant="solid"
+          colorScheme="purple"
+        >
+          Submit
+        </Button>
       </Stack>
     </Stack>
   );

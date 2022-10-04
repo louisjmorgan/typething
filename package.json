@@ -4,7 +4,8 @@
     "start": "webpack serve --https --config config/webpack.config.js",
     "build-dev": "webpack --config config/webpack.config.js",
     "build": "NODE_ENV=production webpack --config config/webpack.config.js",
-    "test": "NODE_ENV=test jest"
+    "test": "NODE_ENV=test jest",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "@babel/core": "^7.18.0",
