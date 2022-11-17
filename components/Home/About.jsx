@@ -81,6 +81,7 @@ function About({ aboutRef }) {
         direction={['column', 'column', 'column', 'row', 'row']}
         width="100%"
         align={['center', 'center', 'center', 'start', 'start']}
+        justify="center"
         gap={10}
         overflow="hidden"
       >
@@ -95,7 +96,8 @@ function About({ aboutRef }) {
               alt="typething collective constructing an installation"
               objectFit="cover"
               m={0}
-              maxHeight="60vh"
+              height="100%"
+              width="100%"
               borderRadius="0.25rem"
               boxShadow={`0 5px 10px ${colorMode === 'light' ? 'rgba(0,0,0,0.3)' : 'rgba(255,255,255,0.2)'}`}
             />

@@ -1,4 +1,4 @@
-import { Box, Image, Text } from '@chakra-ui/react';
+import { Box, Img, Text } from '@chakra-ui/react';
 import NextImage from 'next/image'
 import Link from 'next/link';
 import TypethingLogo from '../../public/logo.svg'
@@ -17,9 +17,8 @@ function Logo() {
       >
         typething
       </Text> */}
-      <Image
-        as={NextImage}
-        src={TypethingLogo}
+      <Img
+        src="/logo.svg"
         alt="typething logo"
         width={[30, 30, 50]}
         height={[30, 30, 50]}

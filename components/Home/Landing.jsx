@@ -1,8 +1,7 @@
 /* eslint-disable react/prop-types */
 import {
-  Box, Button, DarkMode, Flex, Icon, Image, Show, Spacer, Text,
+  Box, Button, DarkMode, Flex, Icon, Img, Text,
 } from '@chakra-ui/react';
-import NextImage from 'next/image';
 import { FiCornerRightDown } from 'react-icons/fi';
 import Carousel from '../Atoms/Carousel';
 import CTAButtons from './CTAButtons';
@@ -62,9 +61,8 @@ function Landing({ aboutRef }) {
               align="center"
               direction="column"
             >
-              <Image
-                as={NextImage}
-                src={Logo}
+              <Img
+                src="/logo.svg"
                 alt="typething logo"
                 height={[150, 150, 200]}
                 width={[150, 150, 200]}

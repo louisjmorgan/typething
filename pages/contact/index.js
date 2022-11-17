@@ -18,7 +18,7 @@ function Contact() {
   const [copyMessage, setCopy] = useState('Copy to clipboard');
   const copyToClipBoard = () => {
     try {
-      navigator.clipboard.writeText('louismorgan.dev@gmail.com');
+      navigator.clipboard.writeText('info@typething.io');
       setCopy('Copy success');
     } catch {
       setCopy('Copy failed');
